@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосервис "МастерАвто" - Ремонт и обслуживание автомобилей</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Авто<span>Сервис</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#booking">Запись онлайн</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Профессиональный автосервис в вашем городе</h1>
+            <p>Качественный ремонт и обслуживание автомобилей любых марок. Опытные мастера, современное оборудование и гарантия на все виды работ.</p>
+            <a href="#booking" class="btn">Записаться онлайн</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наши услуги</h2>
+                <p>Мы предлагаем полный спектр услуг по ремонту и обслуживанию автомобилей</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Техническое обслуживание</h3>
+                    <p>Регулярное ТО, замена масла, фильтров и других расходных материалов</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3>Диагностика</h3>
+                    <p>Компьютерная диагностика двигателя, ходовой части и электронных систем</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔩</div>
+                    <h3>Ремонт двигателя</h3>
+                    <p>Капитальный и текущий ремонт двигателей любой сложности</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚫</div>
+                    <h3>Шиномонтаж</h3>
+                    <p>Сезонная замена шин, балансировка колес, ремонт проколов</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡️</div>
+                    <h3>Электрика</h3>
+                    <p>Ремонт и диагностика электрооборудования, замена аккумуляторов</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Кузовной ремонт</h3>
+                    <p>Покраска, рихтовка, удаление вмятин и восстановление геометрии кузова</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="section-title">
+                <h2>Онлайн запись</h2>
+                <p>Заполните форму ниже, и мы свяжемся с вами для подтверждения записи</p>
+            </div>
+            <div class="booking-form">
+                <form id="appointment-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон *</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="car">Марка и модель автомобиля *</label>
+                            <input type="text" id="car" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Год выпуска</label>
+                            <input type="number" id="year" class="form-control" min="1990" max="2024">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Требуемая услуга</label>
+                        <select id="service" class="form-control">
+                            <option value="">Выберите услугу</option>
+                            <option value="to">Техническое обслуживание</option>
+                            <option value="diagnostics">Диагностика</option>
+                            <option value="engine">Ремонт двигателя</option>
+                            <option value="tires">Шиномонтаж</option>
+                            <option value="electrics">Электрика</option>
+                            <option value="body">Кузовной ремонт</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Предпочтительная дата</label>
+                        <input type="date" id="date" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Дополнительная информация</label>
+                        <textarea id="message" class="form-control" placeholder="Опишите проблему или дополнительные пожелания"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Автосервис</h3>
+                    <p>Качественный ремонт и обслуживание автомобилей с 2010 года.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li><a href="#">Техническое обслуживание</a></li>
+                        <li><a href="#">Диагностика</a></li>
+                        <li><a href="#">Ремонт двигателя</a></li>
+                        <li><a href="#">Шиномонтаж</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li>Гродно, Калиновый переулок, 9В</li>
+                        <li>+375 29 228 1337 </li>
+                        <li>info@autoservice.by</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Автосервис "МастерАвто". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
