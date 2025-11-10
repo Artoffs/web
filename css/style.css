@@ -216,7 +216,7 @@ footer {
 }
 
 .form-group label {
-    /* display: block; */
+    display: block;
     margin-bottom: 8px;
     font-weight: 500;
 }
@@ -243,7 +243,6 @@ textarea.form-control {
     resize: vertical;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -272,7 +271,6 @@ textarea.form-control {
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .container {
         h3 {
