@@ -216,7 +216,7 @@ footer {
 }
 
 .form-group label {
-    display: block;
+    /* display: block; */
     margin-bottom: 8px;
     font-weight: 500;
 }
@@ -241,4 +241,83 @@ footer {
 textarea.form-control {
     min-height: 120px;
     resize: vertical;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        nav {
+            display: none;
+        }
+    }
+    
+    nav ul {
+        margin-top: 15px;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        h3 {
+            font-size: x-large;
+        }
+        p {
+            font-size: large;
+        }
+        .service-icon{
+            font-size: 50px;
+        }
+    }
+
+    .header-content {
+        .logo {
+            font-size: xx-large;
+        }
+        li {
+            font-size: x-large;
+        }
+    }
+    
+    .hero {
+        h1 {
+            font-size: 46px;
+        }
+        p {
+            font-size: x-large;
+        }
+        .btn {
+            font-size: x-large;
+        }
+    }
+
+    .form-group {
+        font-size: large;
+    }
+
+    .booking-form {
+        .btn {
+            font-size: x-large;
+        }
+    }
+
+    .section-title {
+        margin-bottom: 25px;
+    }
 }
