@@ -5,29 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Автосервис "МастерАвто" - Ремонт и обслуживание автомобилей</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">Авто<span>Сервис</span></div>
-                <nav>
-                    <ul>
-                        <li><a href="#services">Услуги</a></li>
-                        <li><a href="#booking">Запись онлайн</a></li>
-                        <li><a href="#about">О нас</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-1 logo mx-5" href="#">Авто<span>Сервис</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link fs-3" href="#">Услуги</a>
+        <a class="nav-link fs-3 " href="#">Запись онлайн</a>
+        <a class="nav-link fs-3" href="#">О нас</a>
+        <a class="nav-link fs-3" href="#">Контакты</a>
         </div>
+      </div>
+    </div>
+  </div>
+</nav>
     </header>
-
     <section class="hero">
         <div class="container">
             <h1>Профессиональный автосервис в вашем городе</h1>
             <p>Качественный ремонт и обслуживание автомобилей любых марок. Опытные мастера, современное оборудование и гарантия на все виды работ.</p>
-            <a href="#booking" class="btn">Записаться онлайн</a>
+            <a href="#booking" class="custom-btn">Записаться онлайн</a>
         </div>
     </section>
 
@@ -68,6 +72,41 @@
                     <h3>Кузовной ремонт</h3>
                     <p>Покраска, рихтовка, удаление вмятин и восстановление геометрии кузова</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3">Отзывы клиентов</h2>
+
+            <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="p-4 shadow-sm bg-white rounded-4 mx-auto" style="max-width: 700px;">
+                            <p class="fst-italic">“Отличный сервис! Сделали диагностику быстро и качественно. Буду обращаться снова.”</p>
+                            <h5 class="mt-3 fw-bold">Александр</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="p-4 shadow-sm bg-white rounded-4 mx-auto" style="max-width: 700px;">
+                            <p class="fst-italic">“Шиномонтаж прошёл оперативно, ребята молодцы!”</p>
+                            <h5 class="mt-3 fw-bold">Ирина</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="p-4 shadow-sm bg-white rounded-4 mx-auto" style="max-width: 700px;">
+                            <p class="fst-italic">“Кузовной ремонт сделали просто идеально, машина как новая.”</p>
+                            <h5 class="mt-3 fw-bold">Максим</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
         </div>
     </section>
@@ -121,7 +160,7 @@
                         <label for="message">Дополнительная информация</label>
                         <textarea id="message" class="form-control" placeholder="Опишите проблему или дополнительные пожелания"></textarea>
                     </div>
-                    <button type="submit" class="btn" style="width: 100%;">Отправить заявку</button>
+                    <button type="submit" class="custom-btn" style="width: 100%;">Отправить заявку</button>
                 </form>
             </div>
         </div>
@@ -159,5 +198,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
